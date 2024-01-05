@@ -7,7 +7,14 @@ Total number of design patterns is 24 which are divided into 3 categories as bel
 
 ### Singleton Design Pattern
 ----------------------------
--
+- There must be exactly one instance of a class and it must be accessible to clients from a well-known access point.
+- When the sole instance should be extensible by subclassing and clients should be able to use an extended instance without modifying
+- Singleton classes are used for logging, driver objects, caching, and thread pool, database connections.
+
+- To implement a singleton pattern, we have different approaches, but all of them have the following common concepts.
+  - Private constructor to restrict instantiation of the class from other classes.
+  - Private static variable of the same class that is the only instance of the class.
+  - Public static method that returns the instance of the class, this is the global access point for the outer world to get the instance      of the singleton class.
 
 ### Strategy Design Pattern
 ---------------------------
